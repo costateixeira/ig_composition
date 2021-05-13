@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="IGArtifacts"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: ">ig-artifacts</span></p><p><b>date</b>: 2021-01-01</p><p><b>author</b>: <span></span></p><p><b>title</b>: Artifacts Index</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <code value="ig-artifacts"/>
+    </coding>
+  </type>
+  <date value="2021-01-01"/>
+  <author>
+    <identifier>
+      <value value="IHE Belgium"/>
+    </identifier>
+  </author>
+  <title value="Artifacts Index"/>
+  <section>
+    <title value="Artifacts - By Type"/>
+    <text>
+      <status value="additional"/><div><p>Artifact index by type</p></div>
+    </text>
+    <mode value="artifact-page"/>
+    <section>
+      <title value="Profiles"/>
+      <text>
+        <status value="additional"/><div><p>Some intro about Profiles</p></div>
+      </text>
+      <entry>
+        <reference value="Instance1"/>
+        <display value="Profile 1"/>
+      </entry>
+      <entry>
+        <reference value="Instance2"/>
+        <display value="Profile 2"/>
+      </entry>
+      <entry>
+        <reference value="Extension1"/>
+      </entry>
+      <section>
+        <focus>
+          <reference value="Profile2"/>
+        </focus>
+        <entry>
+          <reference value="OneExampleForProfile1"/>
+          <display value="This instance is an example of Profile 1"/>
+        </entry>
+        <entry>
+          <reference value="AnotherExampleForProfile1"/>
+          <display value="This instance is an example of Profile 1 but also of Profile 2"/>
+        </entry>
+        <entry>
+          <reference value="Extension1"/>
+        </entry>
+      </section>
+    </section>
+    <section>
+      <title value="Vocabulary"/>
+    </section>
+    <section>
+      <title value="Instances"/>
+    </section>
+  </section>
+  <section>
+    <title value="Artifacts - By Project"/>
+    <text>
+      <status value="additional"/><div><p>This is the artifact index by project</p></div>
+    </text>
+    <mode value="section"/>
+    <section>
+      <title value="Project 1"/>
+      <entry>
+        <reference value="Profile1"/>
+        <display value="Profile 1"/>
+      </entry>
+      <section>
+        <entry>
+          <reference value="OneExampleForProfile1"/>
+          <display value="This instance is an example of Profile 1"/>
+        </entry>
+        <entry>
+          <reference value="AnotherExampleForProfile1"/>
+          <display value="This instance is another example of Profile 1"/>
+        </entry>
+      </section>
+    </section>
+  </section>
+</Composition>

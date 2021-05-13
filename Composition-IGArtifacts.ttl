@@ -1,0 +1,119 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<xxxhttp://somewhere.org/fhir/uv/myig/Composition/IGArtifacts> a fhir:Composition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "IGArtifacts"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: \">ig-artifacts</span></p><p><b>date</b>: 2021-01-01</p><p><b>author</b>: <span></span></p><p><b>title</b>: Artifacts Index</p></div>"
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "ig-artifacts" ]
+     ]
+  ];
+  fhir:Composition.date [ fhir:value "2021-01-01"^^xsd:date];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:Reference.identifier [
+       fhir:Identifier.value [ fhir:value "IHE Belgium" ]
+     ]
+  ];
+  fhir:Composition.title [ fhir:value "Artifacts Index"];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "Artifacts - By Type" ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div><p>Artifact index by type</p></div>"
+     ];
+     fhir:Composition.section.mode [ fhir:value "artifact-page" ];
+     fhir:Composition.section.section [
+       fhir:index 0;
+       fhir:Composition.section.title [ fhir:value "Profiles" ];
+       fhir:Composition.section.text [
+         fhir:Narrative.status [ fhir:value "additional" ];
+         fhir:Narrative.div "<div><p>Some intro about Profiles</p></div>"
+       ];
+       fhir:Composition.section.entry [
+         fhir:index 0;
+         fhir:Reference.reference [ fhir:value "Instance1" ];
+         fhir:Reference.display [ fhir:value "Profile 1" ]
+       ], [
+         fhir:index 1;
+         fhir:Reference.reference [ fhir:value "Instance2" ];
+         fhir:Reference.display [ fhir:value "Profile 2" ]
+       ], [
+         fhir:index 2;
+         fhir:Reference.reference [ fhir:value "Extension1" ]
+       ];
+       fhir:Composition.section.section [
+         fhir:index 0;
+         fhir:Composition.section.focus [
+           fhir:Reference.reference [ fhir:value "Profile2" ]
+         ];
+         fhir:Composition.section.entry [
+           fhir:index 0;
+           fhir:Reference.reference [ fhir:value "OneExampleForProfile1" ];
+           fhir:Reference.display [ fhir:value "This instance is an example of Profile 1" ]
+         ], [
+           fhir:index 1;
+           fhir:Reference.reference [ fhir:value "AnotherExampleForProfile1" ];
+           fhir:Reference.display [ fhir:value "This instance is an example of Profile 1 but also of Profile 2" ]
+         ], [
+           fhir:index 2;
+           fhir:Reference.reference [ fhir:value "Extension1" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Composition.section.title [ fhir:value "Vocabulary" ]
+     ], [
+       fhir:index 2;
+       fhir:Composition.section.title [ fhir:value "Instances" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Composition.section.title [ fhir:value "Artifacts - By Project" ];
+     fhir:Composition.section.text [
+       fhir:Narrative.status [ fhir:value "additional" ];
+       fhir:Narrative.div "<div><p>This is the artifact index by project</p></div>"
+     ];
+     fhir:Composition.section.mode [ fhir:value "section" ];
+     fhir:Composition.section.section [
+       fhir:index 0;
+       fhir:Composition.section.title [ fhir:value "Project 1" ];
+       fhir:Composition.section.entry [
+         fhir:index 0;
+         fhir:Reference.reference [ fhir:value "Profile1" ];
+         fhir:Reference.display [ fhir:value "Profile 1" ]
+       ];
+       fhir:Composition.section.section [
+         fhir:index 0;
+         fhir:Composition.section.entry [
+           fhir:index 0;
+           fhir:Reference.reference [ fhir:value "OneExampleForProfile1" ];
+           fhir:Reference.display [ fhir:value "This instance is an example of Profile 1" ]
+         ], [
+           fhir:index 1;
+           fhir:Reference.reference [ fhir:value "AnotherExampleForProfile1" ];
+           fhir:Reference.display [ fhir:value "This instance is another example of Profile 1" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<xxxhttp://somewhere.org/fhir/uv/myig/Composition/IGArtifacts.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

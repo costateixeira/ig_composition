@@ -1,0 +1,472 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 20, errors = 32, warn = 11, info = 3 -->
+<head>
+  <title>xxxYourComputableMyIGNameHere : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for xxxYourComputableMyIGNameHere</h1>
+ <p>Generated Thu May 13 18:35:23 UTC 2021, FHIR version 4.0.1 for xxxexample.fhir.uv.myig#0.1.0-test (canonical = <a href="xxxhttp://somewhere.org/fhir/uv/myig">xxxhttp://somewhere.org/fhir/uv/myig</a> (<a href="xxxhttp://somewhere.org/fhir/uv/myig/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.68</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = xxxexample.fhir.uv.myig, Canonical = xxxhttp://somewhere.org/fhir/uv/myig</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0-test: <span stlye="color: marron; font-weight: bold">Version does not conform to semver rules</span></td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">5 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> xxxexample.fhir.uv.myig</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0-test</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">xxxhttp://somewhere.org/fhir/uv/myig</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: hl7.be.fhir.template#0.0.1 -&gt; fhir.base.template#0.2.1</para></div></td></tr>
+ <tr><td>HL7 Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at xxxhttp://somewhere.org/fhir/uv/myig (Problem #1 with package-list.json at xxxhttp://somewhere.org/fhir/uv/myig: unknown protocol: xxxhttp)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 20, errors = 32, warn = 11, info = 3</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>20</b></td><td><b>3</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Composition-IGArtifacts"><b>/github/workspace/fsh-generated/resources/Composition-IGArtifacts</b></a></td><td><b>17</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Composition-IGMenu"><b>/github/workspace/fsh-generated/resources/Composition-IGMenu</b></a></td><td><b>7</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Composition-IGTOC"><b>/github/workspace/fsh-generated/resources/Composition-IGTOC</b></a></td><td><b>5</b></td><td><b>4</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_myig"><b>/github/workspace/input/myig</b></a></td><td><b>3</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Composition/IGMenu.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Composition/IGArtifacts.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Composition/IGTOC.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGArtifacts.change.history.html#ceaefa95-e05e-4f81-8a09-ad128e08970e">Composition-IGArtifacts.change.history.html#/html/body/div/div/div/p/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGArtifacts.html#0a3bb25c-033a-4034-8873-baa1ab10c53a">Composition-IGArtifacts.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGArtifacts.json.html#46113885-8793-448f-b793-b036df51f13a">Composition-IGArtifacts.json.html#/html/body/div/div/div/p/a at Line 337, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGArtifacts.ttl.html#70021141-6525-4d22-baa0-979a6685f8b8">Composition-IGArtifacts.ttl.html#/html/body/div/div/div/p/a at Line 319, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGArtifacts.xml.html#7264a1ae-3452-41fd-9cc8-f4214273b26d">Composition-IGArtifacts.xml.html#/html/body/div/div/div/p/a at Line 316, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGMenu.change.history.html#4139a4cc-0334-405a-95d7-b0020526b7f6">Composition-IGMenu.change.history.html#/html/body/div/div/div/p/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGMenu.html#523cd1a5-0edb-45bb-ba14-d4de372f9b7d">Composition-IGMenu.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGMenu.json.html#4c1b08b3-6972-4094-80f8-be51184c352d">Composition-IGMenu.json.html#/html/body/div/div/div/p/a at Line 276, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGMenu.ttl.html#1caed9eb-3fd6-42d3-bf9f-7438a7838ed7">Composition-IGMenu.ttl.html#/html/body/div/div/div/p/a at Line 277, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGMenu.xml.html#dc75c8ce-dc90-4f02-aa84-abc322285bc6">Composition-IGMenu.xml.html#/html/body/div/div/div/p/a at Line 266, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGTOC.change.history.html#1ec7aa61-2973-44f5-9fcc-f06061bbbe80">Composition-IGTOC.change.history.html#/html/body/div/div/div/p/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGTOC.html#073972e0-fa28-4a4a-85e9-69cf3ade316d">Composition-IGTOC.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGTOC.json.html#8c64ed6f-d07e-4f2a-81cf-3703768f0c98">Composition-IGTOC.json.html#/html/body/div/div/div/p/a at Line 266, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGTOC.ttl.html#1ebf54c3-e96d-413f-bd7f-a6d0ce907a0a">Composition-IGTOC.ttl.html#/html/body/div/div/div/p/a at Line 270, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Composition-IGTOC.xml.html#9fa7171d-5a6b-40c4-9f03-28f2aa41baee">Composition-IGTOC.xml.html#/html/body/div/div/div/p/a at Line 258, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#fe459f89-4a64-4dca-a97e-ed6fa27c1a04">artifacts.html#/html/body/div/div/div/p/a at Line 213, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="changes.html#e1c009a0-dd7a-4d22-9fe3-08a6dbcddf57">changes.html#/html/body/div/div/div/p/a at Line 181, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="downloads.html#d40cd9bc-0850-4a8a-bae4-24fe3028cd7a">downloads.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#29acabf6-102b-48db-b5a8-9e5c025d4f44">index.html#/html/body/div/div/div/p/a at Line 207, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#4ea167e6-7e8c-44a3-90d7-3974aa317a2f">toc.html#/html/body/div/div/div/p/a at Line 170, column 28</a></b></td><td><b>error</b></td><td><b>The link 'xxxhttp://hl7.org/Special/committees/[something]' for &quot;xxxYour Work Group&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Composition-IGArtifacts"> </a>
+<h2><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.type (l6/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = null#ig-artifacts)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.type.coding[0] (l7/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].text.div (l25/c59)</b></td><td><b>error</b></td><td title="XHTML_XHTML_NS_InValid"><b>Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].mode (l28/c31)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('artifact-page') is not in the value set http://hl7.org/fhir/ValueSet/list-mode|4.0.1 (http://hl7.org/fhir/ValueSet/list-mode), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/list-mode#artifact-page in http://hl7.org/fhir/list-mode)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].text.div (l33/c66)</b></td><td><b>error</b></td><td title="XHTML_XHTML_NS_InValid"><b>Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].entry[0] (l37/c14)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Instance1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].entry[1] (l41/c14)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Instance2'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].entry[2] (l45/c14)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Extension1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].section[0].focus (l53/c16)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Profile2'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].section[0].entry[0] (l55/c18)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'OneExampleForProfile1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].section[0].entry[1] (l59/c18)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'AnotherExampleForProfile1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].section[0].entry[2] (l63/c18)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Extension1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[1] (l70/c10)</b></td><td><b>error</b></td><td title="cmp-1: 'A section must contain at least one of text, entries, or sub-sections' failed"><b>cmp-1: 'A section must contain at least one of text, entries, or sub-sections' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[2] (l73/c10)</b></td><td><b>error</b></td><td title="cmp-1: 'A section must contain at least one of text, entries, or sub-sections' failed"><b>cmp-1: 'A section must contain at least one of text, entries, or sub-sections' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[1].text.div (l81/c74)</b></td><td><b>error</b></td><td title="XHTML_XHTML_NS_InValid"><b>Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[1].mode (l84/c25)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('section') is not in the value set http://hl7.org/fhir/ValueSet/list-mode|4.0.1 (http://hl7.org/fhir/ValueSet/list-mode), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/list-mode#section in http://hl7.org/fhir/list-mode)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[1].section[0].entry[0] (l89/c14)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'Profile1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[1].section[0].section[0].entry[0] (l97/c18)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'OneExampleForProfile1'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[1].section[0].section[0].entry[1] (l101/c18)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'AnotherExampleForProfile1'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Composition-IGMenu"> </a>
+<h2><a href="Composition-IGMenu.html">/github/workspace/fsh-generated/resources/Composition-IGMenu.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Composition/IGMenu: Composition/IGMenu: Composition (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Composition/IGMenu: Composition/IGMenu: Composition.type (l6/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = null#ig-menu)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition/IGMenu: Composition/IGMenu: Composition.type.coding[0] (l7/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition/IGMenu: Composition/IGMenu: Composition.section[0].code.coding[0] (l26/c12)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGMenu: Composition/IGMenu: Composition.section[0].entry[0] (l32/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource 'page1.html'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGMenu: Composition/IGMenu: Composition.section[0].entry[1].reference (l37/c27)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_Primitive_NotEmpty"><b>@value cannot be empty</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGMenu: Composition/IGMenu: Composition.section[0].entry[1].reference (l37/c27)</b></td><td><b>error</b></td><td title="ele-1: 'All FHIR elements must have a @value or children' failed"><b>ele-1: 'All FHIR elements must have a @value or children' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGMenu: Composition/IGMenu: Composition.section[0].entry[2].reference (l41/c27)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_Primitive_NotEmpty"><b>@value cannot be empty</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGMenu: Composition/IGMenu: Composition.section[0].entry[2].reference (l41/c27)</b></td><td><b>error</b></td><td title="ele-1: 'All FHIR elements must have a @value or children' failed"><b>ele-1: 'All FHIR elements must have a @value or children' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGMenu: Composition/IGMenu: Composition.section[0].entry[3].reference (l45/c27)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_Primitive_NotEmpty"><b>@value cannot be empty</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGMenu: Composition/IGMenu: Composition.section[0].entry[3].reference (l45/c27)</b></td><td><b>error</b></td><td title="ele-1: 'All FHIR elements must have a @value or children' failed"><b>ele-1: 'All FHIR elements must have a @value or children' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Composition-IGTOC"> </a>
+<h2><a href="Composition-IGTOC.html">/github/workspace/fsh-generated/resources/Composition-IGTOC.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Composition/IGTOC: Composition/IGTOC: Composition (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Composition/IGTOC: Composition/IGTOC: Composition.type (l6/c16)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = null#ig-toc)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition/IGTOC: Composition/IGTOC: Composition.type.coding[0] (l7/c8)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGTOC: Composition/IGTOC: Composition.section[0].text.div (l25/c40)</b></td><td><b>error</b></td><td title="XHTML_XHTML_NS_InValid"><b>Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition/IGTOC: Composition/IGTOC: Composition.section[0].entry[0] (l29/c10)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGTOC: Composition/IGTOC: Composition.section[0].entry[0].reference (l31/c10)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_Primitive_NotEmpty"><b>@value cannot be empty</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGTOC: Composition/IGTOC: Composition.section[0].entry[0].reference (l31/c10)</b></td><td><b>error</b></td><td title="ele-1: 'All FHIR elements must have a @value or children' failed"><b>ele-1: 'All FHIR elements must have a @value or children' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition/IGTOC: Composition/IGTOC: Composition.section[0].entry[1] (l32/c10)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Composition/IGTOC: Composition/IGTOC: Composition.section[0].entry[2] (l35/c10)</b></td><td><b>warning</b></td><td title="Reference_REF_NoDisplay"><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGTOC: Composition/IGTOC: Composition.section[0].entry[2].display (l37/c10)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_Primitive_NotEmpty"><b>@value cannot be empty</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Composition/IGTOC: Composition/IGTOC: Composition.section[0].entry[2].display (l37/c10)</b></td><td><b>error</b></td><td title="ele-1: 'All FHIR elements must have a @value or children' failed"><b>ele-1: 'All FHIR elements must have a @value or children' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_myig"> </a>
+<h2><a href="ImplementationGuide-xxxexample.fhir.uv.myig.html">/github/workspace/input/myig.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.where(url = 'xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/input/myig.xml - the canonical URL (xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/xxxexample.fhir.uv.myig) does not match the URL (xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: xxxexample.fhir.uv.myig/xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ImplementationGuide/xxxexample.fhir.uv.myig: ImplementationGuide/xxxexample.fhir.uv.myig: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide/xxxexample.fhir.uv.myig: ImplementationGuide/xxxexample.fhir.uv.myig: ImplementationGuide</b></td><td><b>warning</b></td><td title="ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/input/myig</b></td><td><b>error</b></td><td title=""><b>URL Mismatch xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/xxxexample.fhir.uv.myig vs xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...</b></p><ul>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner: The Implementation Guide contains no examples for this profile</li>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation: The Implementation Guide contains no examples for this profile</li>
+</ul>
+<p><b>This is inherited from the base resource</b></p><ul>
+ <li>WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace</li>
+</ul>
+<p><b>We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present</b></p><ul>
+ <li>INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient</li>
+ <li>INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient</li>
+</ul>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ImplementationGuide-xxxexample.fhir.uv.myig.html">/github/workspace/input/myig.xml</a></td><td><b>Conformance resource /github/workspace/input/myig.xml - the canonical URL (xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/xxxexample.fhir.uv.myig) does not match the URL (xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_ID_MISMATCH"> </a>
+<h2>RESOURCE_ID_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ImplementationGuide-xxxexample.fhir.uv.myig.html">/github/workspace/input/myig.xml</a></td><td><b>Resource id/url mismatch: xxxexample.fhir.uv.myig/xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantResolve"> </a>
+<h2>Reference_REF_CantResolve</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>Unable to resolve resource 'Instance1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>Unable to resolve resource 'Instance2'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>Unable to resolve resource 'Extension1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>Unable to resolve resource 'Profile2'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>Unable to resolve resource 'OneExampleForProfile1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>Unable to resolve resource 'AnotherExampleForProfile1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>Unable to resolve resource 'Extension1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>Unable to resolve resource 'Profile1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>Unable to resolve resource 'OneExampleForProfile1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>Unable to resolve resource 'AnotherExampleForProfile1'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGMenu.html">/github/workspace/fsh-generated/resources/Composition-IGMenu.json</a></td><td><b>Unable to resolve resource 'page1.html'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_NoDisplay"> </a>
+<h2>Reference_REF_NoDisplay</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Composition-IGTOC.html">/github/workspace/fsh-generated/resources/Composition-IGTOC.json</a></td><td><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Composition-IGTOC.html">/github/workspace/fsh-generated/resources/Composition-IGTOC.json</a></td><td><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Composition-IGTOC.html">/github/workspace/fsh-generated/resources/Composition-IGTOC.json</a></td><td><b>A Reference without an actual reference or identifier should have a display</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Composition-IGMenu.html">/github/workspace/fsh-generated/resources/Composition-IGMenu.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Composition-IGMenu.html">/github/workspace/fsh-generated/resources/Composition-IGMenu.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Composition-IGTOC.html">/github/workspace/fsh-generated/resources/Composition-IGTOC.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_16"> </a>
+<h2>Terminology_TX_NoValid_16</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>The value provided ('artifact-page') is not in the value set http://hl7.org/fhir/ValueSet/list-mode|4.0.1 (http://hl7.org/fhir/ValueSet/list-mode), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/list-mode#artifact-page in http://hl7.org/fhir/list-mode)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>The value provided ('section') is not in the value set http://hl7.org/fhir/ValueSet/list-mode|4.0.1 (http://hl7.org/fhir/ValueSet/list-mode), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/list-mode#section in http://hl7.org/fhir/list-mode)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_3_CC"> </a>
+<h2>Terminology_TX_NoValid_3_CC</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = null#ig-artifacts)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Composition-IGMenu.html">/github/workspace/fsh-generated/resources/Composition-IGMenu.json</a></td><td><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = null#ig-menu)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Composition-IGTOC.html">/github/workspace/fsh-generated/resources/Composition-IGTOC.json</a></td><td><b>None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = null#ig-toc)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_Primitive_NotEmpty"> </a>
+<h2>Type_Specific_Checks_DT_Primitive_NotEmpty</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGMenu.html">/github/workspace/fsh-generated/resources/Composition-IGMenu.json</a></td><td><b>@value cannot be empty</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGMenu.html">/github/workspace/fsh-generated/resources/Composition-IGMenu.json</a></td><td><b>@value cannot be empty</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGMenu.html">/github/workspace/fsh-generated/resources/Composition-IGMenu.json</a></td><td><b>@value cannot be empty</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGTOC.html">/github/workspace/fsh-generated/resources/Composition-IGTOC.json</a></td><td><b>@value cannot be empty</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGTOC.html">/github/workspace/fsh-generated/resources/Composition-IGTOC.json</a></td><td><b>@value cannot be empty</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="XHTML_XHTML_NS_InValid"> </a>
+<h2>XHTML_XHTML_NS_InValid</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGArtifacts.html">/github/workspace/fsh-generated/resources/Composition-IGArtifacts.json</a></td><td><b>Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Composition-IGTOC.html">/github/workspace/fsh-generated/resources/Composition-IGTOC.json</a></td><td><b>Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')</b></td>
+   </tr>
+</table>
+</body>
+</html>

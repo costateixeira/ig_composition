@@ -1,0 +1,45 @@
+{
+  "resourceType": "Composition",
+  "id": "IGTOC",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: \">ig-toc</span></p><p><b>date</b>: 2021-01-01</p><p><b>author</b>: <span></span></p><p><b>title</b>: Table of Contents</p></div>"
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "ig-toc"
+      }
+    ]
+  },
+  "date": "2021-01-01",
+  "author": [
+    {
+      "identifier": {
+        "value": "IHE Belgium"
+      }
+    }
+  ],
+  "title": "Table of Contents",
+  "section": [
+    {
+      "title": "...",
+      "text": {
+        "status": "additional",
+        "div": "<div><p>...</p></div>"
+      },
+      "entry": [
+        {
+          "reference": ""
+        },
+        {
+          "type": "markdown"
+        },
+        {
+          "display": ""
+        }
+      ]
+    }
+  ]
+}

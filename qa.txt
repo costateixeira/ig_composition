@@ -1,0 +1,88 @@
+﻿xxxYourComputableMyIGNameHere : Validation Results
+=========================================
+
+err = 32, warn = 11, info = 3
+IG Publisher Version: 1.1.68
+Generated Thu May 13 18:35:23 UTC 2021. FHIR version 4.0.1 for xxxexample.fhir.uv.myig#0.1.0-test (canonical = xxxhttp://somewhere.org/fhir/uv/myig)
+
+ Build Errors : 20 / 3 / 0
+ /github/workspace/fsh-generated/resources/Composition-IGArtifacts : 17 / 1 / 2
+ /github/workspace/fsh-generated/resources/Composition-IGMenu : 7 / 2 / 2
+ /github/workspace/fsh-generated/resources/Composition-IGTOC : 5 / 4 / 2
+ /github/workspace/input/myig : 3 / 1 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Composition/IGMenu.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Composition/IGArtifacts.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Composition/IGTOC.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Composition-IGArtifacts.change.history.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/Composition-IGArtifacts.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/Composition-IGArtifacts.json.html#/html/body/div/div/div/p/a at Line 337, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/Composition-IGArtifacts.ttl.html#/html/body/div/div/div/p/a at Line 319, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/Composition-IGArtifacts.xml.html#/html/body/div/div/div/p/a at Line 316, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/Composition-IGMenu.change.history.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/Composition-IGMenu.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/Composition-IGMenu.json.html#/html/body/div/div/div/p/a at Line 276, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/Composition-IGMenu.ttl.html#/html/body/div/div/div/p/a at Line 277, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/Composition-IGMenu.xml.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/Composition-IGTOC.change.history.html#/html/body/div/div/div/p/a at Line 234, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/Composition-IGTOC.html#/html/body/div/div/div/p/a at Line 221, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/Composition-IGTOC.json.html#/html/body/div/div/div/p/a at Line 266, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/Composition-IGTOC.ttl.html#/html/body/div/div/div/p/a at Line 270, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/Composition-IGTOC.xml.html#/html/body/div/div/div/p/a at Line 258, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 213, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/changes.html#/html/body/div/div/div/p/a at Line 181, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 217, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 207, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 170, column 28: The link 'xxxhttp://hl7.org/Special/committees/[something]' for "xxxYour Work Group" cannot be resolved
+== /github/workspace/fsh-generated/resources/Composition-IGArtifacts.json ==
+INFORMATION: Composition/IGArtifacts: Composition/IGArtifacts: Composition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
+INFORMATION: Composition/IGArtifacts: Composition/IGArtifacts: Composition.type: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = null#ig-artifacts)
+WARNING: Composition/IGArtifacts: Composition/IGArtifacts: Composition.type.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].mode: The value provided ('artifact-page') is not in the value set http://hl7.org/fhir/ValueSet/list-mode|4.0.1 (http://hl7.org/fhir/ValueSet/list-mode), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/list-mode#artifact-page in http://hl7.org/fhir/list-mode)
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].entry[0]: Unable to resolve resource 'Instance1'
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].entry[1]: Unable to resolve resource 'Instance2'
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].entry[2]: Unable to resolve resource 'Extension1'
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].section[0].focus: Unable to resolve resource 'Profile2'
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].section[0].entry[0]: Unable to resolve resource 'OneExampleForProfile1'
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].section[0].entry[1]: Unable to resolve resource 'AnotherExampleForProfile1'
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[0].section[0].entry[2]: Unable to resolve resource 'Extension1'
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[1]: cmp-1: 'A section must contain at least one of text, entries, or sub-sections' failed
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[0].section[2]: cmp-1: 'A section must contain at least one of text, entries, or sub-sections' failed
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[1].text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[1].mode: The value provided ('section') is not in the value set http://hl7.org/fhir/ValueSet/list-mode|4.0.1 (http://hl7.org/fhir/ValueSet/list-mode), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/list-mode#section in http://hl7.org/fhir/list-mode)
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[1].section[0].entry[0]: Unable to resolve resource 'Profile1'
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[1].section[0].section[0].entry[0]: Unable to resolve resource 'OneExampleForProfile1'
+ERROR: Composition/IGArtifacts: Composition/IGArtifacts: Composition.section[1].section[0].section[0].entry[1]: Unable to resolve resource 'AnotherExampleForProfile1'
+== /github/workspace/fsh-generated/resources/Composition-IGMenu.json ==
+INFORMATION: Composition/IGMenu: Composition/IGMenu: Composition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
+INFORMATION: Composition/IGMenu: Composition/IGMenu: Composition.type: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = null#ig-menu)
+WARNING: Composition/IGMenu: Composition/IGMenu: Composition.type.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Composition/IGMenu: Composition/IGMenu: Composition.section[0].code.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Composition/IGMenu: Composition/IGMenu: Composition.section[0].entry[0]: Unable to resolve resource 'page1.html'
+ERROR: Composition/IGMenu: Composition/IGMenu: Composition.section[0].entry[1].reference: @value cannot be empty
+ERROR: Composition/IGMenu: Composition/IGMenu: Composition.section[0].entry[1].reference: ele-1: 'All FHIR elements must have a @value or children' failed
+ERROR: Composition/IGMenu: Composition/IGMenu: Composition.section[0].entry[2].reference: @value cannot be empty
+ERROR: Composition/IGMenu: Composition/IGMenu: Composition.section[0].entry[2].reference: ele-1: 'All FHIR elements must have a @value or children' failed
+ERROR: Composition/IGMenu: Composition/IGMenu: Composition.section[0].entry[3].reference: @value cannot be empty
+ERROR: Composition/IGMenu: Composition/IGMenu: Composition.section[0].entry[3].reference: ele-1: 'All FHIR elements must have a @value or children' failed
+== /github/workspace/fsh-generated/resources/Composition-IGTOC.json ==
+INFORMATION: Composition/IGTOC: Composition/IGTOC: Composition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Composition
+INFORMATION: Composition/IGTOC: Composition/IGTOC: Composition.type: None of the codings provided are in the value set http://hl7.org/fhir/ValueSet/doc-typecodes (http://hl7.org/fhir/ValueSet/doc-typecodes), and a coding is recommended to come from this value set) (codes = null#ig-toc)
+WARNING: Composition/IGTOC: Composition/IGTOC: Composition.type.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Composition/IGTOC: Composition/IGTOC: Composition.section[0].text.div: Wrong namespace on the XHTML ('null', should be 'http://www.w3.org/1999/xhtml')
+WARNING: Composition/IGTOC: Composition/IGTOC: Composition.section[0].entry[0]: A Reference without an actual reference or identifier should have a display
+ERROR: Composition/IGTOC: Composition/IGTOC: Composition.section[0].entry[0].reference: @value cannot be empty
+ERROR: Composition/IGTOC: Composition/IGTOC: Composition.section[0].entry[0].reference: ele-1: 'All FHIR elements must have a @value or children' failed
+WARNING: Composition/IGTOC: Composition/IGTOC: Composition.section[0].entry[1]: A Reference without an actual reference or identifier should have a display
+WARNING: Composition/IGTOC: Composition/IGTOC: Composition.section[0].entry[2]: A Reference without an actual reference or identifier should have a display
+ERROR: Composition/IGTOC: Composition/IGTOC: Composition.section[0].entry[2].display: @value cannot be empty
+ERROR: Composition/IGTOC: Composition/IGTOC: Composition.section[0].entry[2].display: ele-1: 'All FHIR elements must have a @value or children' failed
+== /github/workspace/input/myig.xml ==
+ERROR: ImplementationGuide.where(url = 'xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig'): Conformance resource /github/workspace/input/myig.xml - the canonical URL (xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/xxxexample.fhir.uv.myig) does not match the URL (xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig)
+ERROR: ImplementationGuide.url: Resource id/url mismatch: xxxexample.fhir.uv.myig/xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig
+INFORMATION: ImplementationGuide/xxxexample.fhir.uv.myig: ImplementationGuide/xxxexample.fhir.uv.myig: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+WARNING: ImplementationGuide/xxxexample.fhir.uv.myig: ImplementationGuide/xxxexample.fhir.uv.myig: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+ERROR: /github/workspace/input/myig: URL Mismatch xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/xxxexample.fhir.uv.myig vs xxxhttp://somewhere.org/fhir/uv/myig/ImplementationGuide/example.fhir.uv.myig

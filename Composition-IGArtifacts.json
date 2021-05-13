@@ -1,0 +1,116 @@
+{
+  "resourceType": "Composition",
+  "id": "IGArtifacts",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: \">ig-artifacts</span></p><p><b>date</b>: 2021-01-01</p><p><b>author</b>: <span></span></p><p><b>title</b>: Artifacts Index</p></div>"
+  },
+  "status": "final",
+  "type": {
+    "coding": [
+      {
+        "code": "ig-artifacts"
+      }
+    ]
+  },
+  "date": "2021-01-01",
+  "author": [
+    {
+      "identifier": {
+        "value": "IHE Belgium"
+      }
+    }
+  ],
+  "title": "Artifacts Index",
+  "section": [
+    {
+      "title": "Artifacts - By Type",
+      "text": {
+        "status": "additional",
+        "div": "<div><p>Artifact index by type</p></div>"
+      },
+      "mode": "artifact-page",
+      "section": [
+        {
+          "title": "Profiles",
+          "text": {
+            "status": "additional",
+            "div": "<div><p>Some intro about Profiles</p></div>"
+          },
+          "entry": [
+            {
+              "reference": "Instance1",
+              "display": "Profile 1"
+            },
+            {
+              "reference": "Instance2",
+              "display": "Profile 2"
+            },
+            {
+              "reference": "Extension1"
+            }
+          ],
+          "section": [
+            {
+              "focus": {
+                "reference": "Profile2"
+              },
+              "entry": [
+                {
+                  "reference": "OneExampleForProfile1",
+                  "display": "This instance is an example of Profile 1"
+                },
+                {
+                  "reference": "AnotherExampleForProfile1",
+                  "display": "This instance is an example of Profile 1 but also of Profile 2"
+                },
+                {
+                  "reference": "Extension1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Vocabulary"
+        },
+        {
+          "title": "Instances"
+        }
+      ]
+    },
+    {
+      "title": "Artifacts - By Project",
+      "text": {
+        "status": "additional",
+        "div": "<div><p>This is the artifact index by project</p></div>"
+      },
+      "mode": "section",
+      "section": [
+        {
+          "title": "Project 1",
+          "entry": [
+            {
+              "reference": "Profile1",
+              "display": "Profile 1"
+            }
+          ],
+          "section": [
+            {
+              "entry": [
+                {
+                  "reference": "OneExampleForProfile1",
+                  "display": "This instance is an example of Profile 1"
+                },
+                {
+                  "reference": "AnotherExampleForProfile1",
+                  "display": "This instance is another example of Profile 1"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

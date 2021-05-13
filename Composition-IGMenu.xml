@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Composition xmlns="http://hl7.org/fhir">
+  <id value="IGMenu"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: ">ig-menu</span></p><p><b>date</b>: 2021-01-01</p><p><b>author</b>: <span></span></p><p><b>title</b>: Menu</p></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <code value="ig-menu"/>
+    </coding>
+  </type>
+  <date value="2021-01-01"/>
+  <author>
+    <identifier>
+      <value value="IHE Belgium"/>
+    </identifier>
+  </author>
+  <title value="Menu"/>
+  <section>
+    <title value="TopMenu1"/>
+    <code>
+      <coding>
+        <code value="artifacts"/>
+      </coding>
+    </code>
+    <entry>
+      <reference value="page1.html"/>
+      <display value="Page 1"/>
+    </entry>
+    <entry>
+      <reference value=""/>
+      <display value="Artifacts - by type"/>
+    </entry>
+    <entry>
+      <reference value=""/>
+      <display value="Artifacts - by project"/>
+    </entry>
+    <entry>
+      <reference value=""/>
+      <display value="Artifacts - all"/>
+    </entry>
+  </section>
+</Composition>

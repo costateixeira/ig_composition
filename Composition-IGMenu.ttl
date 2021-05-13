@@ -1,0 +1,64 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<xxxhttp://somewhere.org/fhir/uv/myig/Composition/IGMenu> a fhir:Composition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "IGMenu"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: \">ig-menu</span></p><p><b>date</b>: 2021-01-01</p><p><b>author</b>: <span></span></p><p><b>title</b>: Menu</p></div>"
+  ];
+  fhir:Composition.status [ fhir:value "final"];
+  fhir:Composition.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "ig-menu" ]
+     ]
+  ];
+  fhir:Composition.date [ fhir:value "2021-01-01"^^xsd:date];
+  fhir:Composition.author [
+     fhir:index 0;
+     fhir:Reference.identifier [
+       fhir:Identifier.value [ fhir:value "IHE Belgium" ]
+     ]
+  ];
+  fhir:Composition.title [ fhir:value "Menu"];
+  fhir:Composition.section [
+     fhir:index 0;
+     fhir:Composition.section.title [ fhir:value "TopMenu1" ];
+     fhir:Composition.section.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "artifacts" ]
+       ]
+     ];
+     fhir:Composition.section.entry [
+       fhir:index 0;
+       fhir:Reference.reference [ fhir:value "page1.html" ];
+       fhir:Reference.display [ fhir:value "Page 1" ]
+     ], [
+       fhir:index 1;
+       fhir:Reference.reference [ fhir:value "" ];
+       fhir:Reference.display [ fhir:value "Artifacts - by type" ]
+     ], [
+       fhir:index 2;
+       fhir:Reference.reference [ fhir:value "" ];
+       fhir:Reference.display [ fhir:value "Artifacts - by project" ]
+     ], [
+       fhir:index 3;
+       fhir:Reference.reference [ fhir:value "" ];
+       fhir:Reference.display [ fhir:value "Artifacts - all" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<xxxhttp://somewhere.org/fhir/uv/myig/Composition/IGMenu.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
